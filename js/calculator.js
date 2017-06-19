@@ -86,3 +86,17 @@ function memoryRecall(){
 
 }
 
+function memoryRemove(){
+
+}
+
+function exp(){
+
+	var x = (Math.exp(document.getElementById("DisplayScreen").value)).toFixed(2)
+
+	document.getElementById("Display").value = x
+
+	document.getElementById("DisplayScreen").value = ""
+
+}
+
