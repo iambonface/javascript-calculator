@@ -58,8 +58,10 @@ var memVal
 function memoryAdd(){
 	if(memoryArr.length > 0){
 		memoryArr = []
+
 		memoryArr.push(document.getElementById("Display").value)
-	} else{
+
+	}else{
 
 		memoryArr.push(document.getElementById("Display").value)
 	}
@@ -68,7 +70,7 @@ function memoryAdd(){
 
 	console.log(memVal)
 
-	document.getElementById("Display").value = ("M                           " + memVal)
+	document.getElementById("Display").value = (memVal)
 
 	document.getElementById("DisplayScreen").value = ""
 
