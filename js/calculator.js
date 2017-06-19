@@ -100,3 +100,17 @@ function exp(){
 
 }
 
+function signBefore(){
+
+	if(Math.sign(document.getElementById("DisplayScreen").value) === -1){
+		document.getElementById("DisplayScreen").value = document.getElementById("DisplayScreen").value
+		
+	}else if(Math.sign(document.getElementById("DisplayScreen").value) === 1){
+		document.getElementById("DisplayScreen").value = -(document.getElementById("DisplayScreen").value)
+	}
+
+	document.getElementById("DisplayScreen").value
+
+}
+
+
