@@ -52,3 +52,24 @@ function backspace(){
 	document.getElementById("DisplayScreen").value = popped
 
 }
+var memoryArr = []
+var memVal
+
+function memoryAdd(){
+	if(memoryArr.length > 0){
+		memoryArr = []
+		memoryArr.push(document.getElementById("Display").value)
+	} else{
+
+		memoryArr.push(document.getElementById("Display").value)
+	}
+
+	memVal = memoryArr.join('')
+
+	console.log(memVal)
+
+	document.getElementById("Display").value = ("M                           " + memVal)
+
+	document.getElementById("DisplayScreen").value = ""
+
+}
