@@ -29,59 +29,64 @@
 			</div>
 		</div>
 
-		<div class="display">
-			<div class="col-md-12">
-			</div>			
-		</div>
+		<input id="DisplayScreen" value="" class="display" name="Display" readonly="" />
+		<input id="Display" value="" class="display" name="Display" style="border-top:0" readonly="" />
+
+
+			<!--<p id="Value"></p>-->
+	
 
 	<div class="calc-container">
 		<div class="row col-md-12 col-md-offset-0">
-			<button class="btn-calc">&radic;</button>
-			<button class="btn-calc mem mem-minus">M-</button>
-			<button class="btn-calc mem mem-recall">MR</button>
-			<button class="btn-calc mem mem-add">M+</button>
-			<button class="btn-calc btn-red off pull-right">OFF</button>
+			<input type="button" id="Sqrt" class="btn-calc" value="&radic;" onclick='sqrt()'/>
+			<input type="button" id="MemoryRemove" class="btn-calc mem mem-minus" value="M-" />
+			<input type="button" id="MemoryRecall" class="btn-calc mem mem-recall" value="MR" />
+			<input type="button" id="MemoryAdd" class="btn-calc mem mem-add" value="M+" onclick="memoryAdd()" />
+			<input type="button" id="OFF" class="btn-calc btn-red off" value="CE" onclick="backspace()"  />
 			
 		</div>
 
 
 		<div class="row col-md-12 col-md-offset-0">
-			<button class="btn-calc">7</button>
-			<button class="btn-calc">8</button>
-			<button class="btn-calc">9</button>
-			<button class="btn-calc btn-red">C</button>
-			<button class="btn-calc btn-red">AC</button>
+			<input type="button" id="7" class="btn-calc" value="7" onclick="addVal('7')" />
+			<input type="button" id="8" class="btn-calc" value="8" onclick="addVal('8')"/>
+			<input type="button" id="9" class="btn-calc" value="9" onclick='addVal("9")' />
+			<input type="button" id="C" class="btn-calc btn-red" value="C" onclick="clearScreen()" />
+			<input type="button" id="AC" class="btn-calc btn-red" value="AC" />
 			
 		</div>
 
 		<div class="row col-md-12 col-md-offset-0">
-			<button class="btn-calc">4</button>
-			<button class="btn-calc">5</button>
-			<button class="btn-calc">6</button>
-			<button class="btn-calc">&times;</button>
-			<button class="btn-calc">&divide;</button>
-			
-		</div>
+            <input type="button" id="4" class="btn-calc" value="4" onclick='addVal("4")' />
+			<input type="button" id="5" class="btn-calc" value="5" onclick='addVal("5")' />
+			<input type="button" id="6" class="btn-calc" value="6" onclick='addVal("6")' />
+			<input type="button" id="Multiply" class="btn-calc" value="&times;" onclick='addVal("*")' />
+			<input type="button" id="Divide" class="btn-calc" value="&divide;" onclick='addVal("/")' />
 
-
-		<div class="row col-md-12 col-md-offset-0">
-			<button class="btn-calc">1</button>
-			<button class="btn-calc">2</button>
-			<button class="btn-calc">3</button>
-			<button class="btn-calc">&plus;</button>
-			<button class="btn-calc">&minus;</button>
 			
 		</div>
 
 
 		<div class="row col-md-12 col-md-offset-0">
-			<button class="btn-calc">0</button>
-			<button class="btn-calc">&middot;</button>
-			<button class="btn-calc exp">EXP</button>
-			<button class="btn-calc">&equals;</button>
-			<button class="btn-calc">&plusmn</button>
-			<!--<button class="btn-calc plus-minus">+<br /><span>-</span></button> -->
+			<input type="button" id="1" class="btn-calc" value="1" onclick='addVal("1")' />
+			<input type="button" id="2" class="btn-calc" value="2" onclick='addVal("2")' />
+			<input type="button" id="3" class="btn-calc" value="3" onclick='addVal("3")' />
+			<input type="button" id="Plus" class="btn-calc" value="&plus;" onclick='addVal("+")' />
+			<input type="button" id="Minus" class="btn-calc" value="&minus;" onclick='addVal("-")' />
 
+			
+		</div>
+
+
+		<div class="row col-md-12 col-md-offset-0">
+			<input type="button" id="0" class="btn-calc" value="0" onclick='addVal("0")' />
+
+			<input type="button" id="Dot" class="btn-calc" value="&middot;" onclick='addVal(".")' />
+			<input type="button" id="Exp" class="btn-calc exp" value="EXP" onclick='exp()' />
+
+			<input type="button" id="Equals" class="btn-calc" value="&equals;" onclick='result()' />
+
+			<input type="button" class="btn-calc" value="&plusmn;" onclick="addVal(&plusmn;)" />
 			
 		</div>
 
@@ -91,6 +96,22 @@
 
 
 	</div>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- fallback jQuery -->
+    <script>
+    	if(!window.jQuery){
+    		document.write('<script src="./js/jquery-min.js"><\/script>');
+    	}    	
+    </script>
+
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="./js/calculator.js"></script>
 			
 	
 </body>

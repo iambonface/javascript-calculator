@@ -37,8 +37,15 @@ body{
 	box-shadow: inset 0 0 6px 0px #000;
 	height: 40px;
 	background-color: #f7f4d7;
-	margin-right: 12px;
-	margin-left: 12px;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #000;
+	font-size: 22px;
+	text-align: right;
+}
+#Value{
+	float: right;
+	padding: 5px;
 }
 
 
