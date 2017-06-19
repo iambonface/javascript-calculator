@@ -73,3 +73,14 @@ function memoryAdd(){
 	document.getElementById("DisplayScreen").value = ""
 
 }
+
+function memoryRecall(){
+	if(memoryArr.length > 0){
+		document.getElementById("DisplayScreen").value += memoryArr.join('')
+	} else{
+
+		document.getElementById("DisplayScreen").value += memoryArr.join('')
+	}
+
+}
+
