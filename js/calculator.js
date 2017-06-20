@@ -15,14 +15,14 @@ function result(){
 
 	var y = myMap.values()
 
-	document.getElementById("Display").value = (y.next().value).toFixed(2)
+	document.getElementById("Display").value = parseFloat((y.next().value).toFixed(7))
 
 	document.getElementById("DisplayScreen").value = ""
 }
 
 function sqrt(){
 
-	var x = (Math.sqrt(document.getElementById("DisplayScreen").value)).toFixed(2)
+	var x = (Math.sqrt(document.getElementById("DisplayScreen").value)).toFixed(7)
 
 	document.getElementById("Display").value = x
 
