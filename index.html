@@ -22,15 +22,15 @@
 </head>
 <body>
 
-	<div class="col-md-4 col-md-offset-4 col-ms-4 col-ms-offset-4 col-xs-10 col-xs-offset-1 calc">
+	<div class="col-md-2 col-md-offset-5 col-ms-2 col-ms-offset-5 col-xs-10 col-xs-offset-1 calc">
 		<div class="header">
 			<div class="col-md-12">
 				<p>DIGITAL CALCULATOR</p>			
 			</div>
 		</div>
 
-		<input id="DisplayScreen" value="" class="display" name="Display" readonly="" />
-		<input id="Display" value="" class="display" name="Display" style="border-top:0" readonly="" />
+		<input id="DisplayScreen" value="" class="display col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0" name="DisplayTop" size="20" readonly="" />
+		<input id="Display" value="" class="display col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0" name="DisplayBottom" readonly="" />
 
 
 			<!--<p id="Value"></p>-->
@@ -52,7 +52,7 @@
 			<input type="button" id="8" class="btn-calc" value="8" onclick="addVal('8')"/>
 			<input type="button" id="9" class="btn-calc" value="9" onclick='addVal("9")' />
 			<input type="button" id="C" class="btn-calc btn-red" value="C" onclick="clearScreen()" />
-			<input type="button" id="AC" class="btn-calc btn-red" value="AC" />
+			<input type="button" id="AC" class="btn-calc btn-red" value="AC" onclick="allClear()" />
 			
 		</div>
 
