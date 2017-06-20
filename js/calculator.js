@@ -123,6 +123,8 @@ function memoryRemove(){
 
 	document.getElementById("DisplayScreen").value = newMem /*top to display nothing in memory*/
 
+	document.getElementById("Display").value = ""
+
 }
 
 function exp(){

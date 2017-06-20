@@ -22,7 +22,8 @@
 </head>
 <body>
 
-	<div class="col-md-2 col-md-offset-5 col-ms-2 col-ms-offset-5 col-xs-10 col-xs-offset-1 calc">
+	<div class="container">
+	<div class="calc">
 		<div class="header">
 			<div class="col-md-12">
 				<p>DIGITAL CALCULATOR</p>			
@@ -30,14 +31,14 @@
 		</div>
 
 		<input id="DisplayScreen" value="" class="display col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0" name="DisplayTop" size="20" readonly="" />
-		<input id="Display" value="" class="display col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0" name="DisplayBottom" readonly="" />
+		<input id="Display" value="" class="display2 col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0" name="DisplayBottom" readonly="" />
 
 
 			<!--<p id="Value"></p>-->
 	
 
 	<div class="calc-container">
-		<div class="row col-md-12 col-md-offset-0">
+		<div class="row col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0">
 			<input type="button" id="Sqrt" class="btn-calc" value="&radic;" onclick='sqrt()'/>
 			<input type="button" id="MemoryRemove" class="btn-calc mem mem-minus" value="M-"  onclick="memoryRemove()"/>
 			<input type="button" id="MemoryRecall" class="btn-calc mem mem-recall" value="MR" onclick="memoryRecall()" />
@@ -47,7 +48,7 @@
 		</div>
 
 
-		<div class="row col-md-12 col-md-offset-0">
+		<div class="row col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0">
 			<input type="button" id="7" class="btn-calc" value="7" onclick="addVal('7')" />
 			<input type="button" id="8" class="btn-calc" value="8" onclick="addVal('8')"/>
 			<input type="button" id="9" class="btn-calc" value="9" onclick='addVal("9")' />
@@ -56,7 +57,7 @@
 			
 		</div>
 
-		<div class="row col-md-12 col-md-offset-0">
+		<div class="row col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0">
             <input type="button" id="4" class="btn-calc" value="4" onclick='addVal("4")' />
 			<input type="button" id="5" class="btn-calc" value="5" onclick='addVal("5")' />
 			<input type="button" id="6" class="btn-calc" value="6" onclick='addVal("6")' />
@@ -67,7 +68,7 @@
 		</div>
 
 
-		<div class="row col-md-12 col-md-offset-0">
+		<div class="row col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0">
 			<input type="button" id="1" class="btn-calc" value="1" onclick='addVal("1")' />
 			<input type="button" id="2" class="btn-calc" value="2" onclick='addVal("2")' />
 			<input type="button" id="3" class="btn-calc" value="3" onclick='addVal("3")' />
@@ -78,7 +79,7 @@
 		</div>
 
 
-		<div class="row col-md-12 col-md-offset-0">
+		<div class="row col-md-12 col-md-offset-0 col-ms-12 col-ms-offset-0 col-xs-12 col-xs-offset-0">
 			<input type="button" id="0" class="btn-calc" value="0" onclick='addVal("0")' />
 
 			<input type="button" id="Dot" class="btn-calc" value="&middot;" onclick='addVal(".")' />
@@ -87,6 +88,8 @@
 			<input type="button" id="Equals" class="btn-calc" value="&equals;" onclick='result()' />
 
 			<input type="button" class="btn-calc" value="&plusmn;" onclick="signBefore()" />
+
+
 			
 		</div>
 
@@ -96,13 +99,12 @@
 
 
 	</div> <!-- end of calc object -->
+		
+	</div> <!-- container -->
 
 	<!-- FOOTER -->
-	<div class="bottom">
-		<div class="row">
-		<div>a freeCodeCamp <i class="fa fa-free-code-camp"></i> Project</div>	
-		<div>Built with <i class="fa fa-heart"></i> by <a href="https://www.linkedin.com/in/bonface/">Bonface Mudiri</a> &copy 2017</div>
-		</div>
+	<div class="bottom container">
+		<div class="col-md-12 col-md-offset-0">a freeCodeCamp <i class="fa fa-free-code-camp"></i> Project | Built with <i class="fa fa-heart"></i> by <a href="https://www.linkedin.com/in/bonface/">Bonface Mudiri</a><br> Copyright &copy 2017</div>
 	</div>
 
 	<!-- jQuery -->
