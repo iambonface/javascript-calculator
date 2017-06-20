@@ -56,10 +56,26 @@ var memoryArr = []
 var memVal
 
 function memoryAdd(){
+
+	var displayMem = document.getElementById("Display").value
+
+	console.log((displayMem.split(' ')).length)
+
+	var memDisplayArr = (displayMem.split(' ')).length
+
+
 	if(memoryArr.length > 0){
 		memoryArr = []
 
 		memoryArr.push(document.getElementById("Display").value)
+
+	}else if(memDisplayArr > 0){
+		memoryArr =[]
+
+		memoryArr.push(document.getElementById("Display").value)
+
+		document.getElementById("Display").value = (memVal)
+
 
 	}else{
 
@@ -68,7 +84,7 @@ function memoryAdd(){
 
 	memVal = memoryArr.join('')
 
-	console.log(memVal)
+	//console.log(memVal)
 
 	document.getElementById("Display").value = (memVal)
 
@@ -88,6 +104,13 @@ function memoryRecall(){
 
 function memoryRemove(){
 
+	memoryArr = []
+
+	var newMem = memoryArr.join('')
+	//document.getElementById("Display").value = newMem
+
+	document.getElementById("DisplayScreen").value = newMem /*top to display nothing in memory*/
+
 }
 
 function exp(){
@@ -104,7 +127,7 @@ function signBefore(){
 
 	if(Math.sign(document.getElementById("DisplayScreen").value) === -1){
 		document.getElementById("DisplayScreen").value = document.getElementById("DisplayScreen").value
-		
+
 	}else if(Math.sign(document.getElementById("DisplayScreen").value) === 1){
 		document.getElementById("DisplayScreen").value = -(document.getElementById("DisplayScreen").value)
 	}
