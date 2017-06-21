@@ -68,9 +68,9 @@ body{
 	padding-bottom: 0px;
 }
 
-.off{
+/*.off{
 	font-size: 17px;
-}
+}*/
 
 .calc-container{
 	margin-top: 26px;
@@ -96,6 +96,8 @@ body{
 	font-family: 'Basic', sans-serif;
 
 }
+
+
 .fa{
 	color: black;
 }
@@ -193,10 +195,6 @@ body{
 		line-height: 7px;
 		padding-top: 0px;
 		padding-bottom: 0px;
-	}
-
-	.off{
-		font-size: 13px;
 	}
 
 	.calc-container{
