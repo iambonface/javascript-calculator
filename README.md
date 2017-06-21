@@ -1,7 +1,7 @@
 
 ## A freeCodeCamp Javascript Calculator App
 
-    This app displays user location and weather.
+    This is a standard calculator that displays results for various arithmetics.
 
 ## User Stories and Challenge Requirements
     User Story 1: I can add, subtract, multiply and divide two numbers.
