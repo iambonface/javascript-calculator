@@ -1,3 +1,11 @@
+  /* ----------------------------------------------------
+Stylesheet for Digital Calculator App [A freeCodeCamp Project ]
+version 1.0
+author: Bonface Mudiri
+email: tastywebapps@gmail.com
+webpage: https://www.linkedin.com/in/bonface/
+-------------------------------------------------------*/
+
  @import url('https://fonts.googleapis.com/css?family=Orbitron');
  @import url('https://fonts.googleapis.com/css?family=Basic');
 *{
@@ -137,19 +145,18 @@ body{
 }
 
 .bottom{
-		bottom: 50px;
-		width: 100%;
-		height: 50px;
-		background-color: #f6f7d3;
-		color: #000;
-		padding: 3px;
-		left: 0;
-		right: 0;
-		letter-spacing: 1px;
-		font-family: 'Basic', sans-serif;
-		padding: 10px;
+	bottom: 100px;
+	width: 100%;
+	background-color: #f6f7d3;
+	color: #000;
+	padding: 3px;
+	left: 0;
+	right: 0;
+	letter-spacing: 1px;
+	font-family: 'Basic', sans-serif;
+	padding: 10px;
 
-	}
+}
 
 
 @media screen and (max-width: 480px){
@@ -207,9 +214,7 @@ body{
 
 
 	.bottom{
-		bottom: 100px;
 		width: 100%;
-		height: 50px;
 		background-color: #f6f7d3;  /*rgb(187,187,187);*/
 		color: #000;
 		padding: 3px;
@@ -218,7 +223,6 @@ body{
 		letter-spacing: 1px;
 		font-family: 'Basic', sans-serif;
 		padding: 10px;
-
 	}
 
 

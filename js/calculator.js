@@ -1,3 +1,9 @@
+/**
+ * @file A DIgital Calculator App; A freeCodeCamp Project
+ * @author Bonface Mudiri < tastywebapps@gmail.com >
+ * Web: https://www.linkedin.com/in/bonface/
+ */
+
 
 function addVal(val){
 
