@@ -109,8 +109,8 @@ body{
 
 
 .display{
-	height: 40px;
-	background-color: #848580;
+	height: 35px;
+	background-color: #a1a492;
 	color: #000;
 	font-size: 22px;
 	text-align: right;
@@ -120,13 +120,12 @@ body{
 	margin: 0 auto;
 	border-bottom-style: none;	
 	box-shadow: inset 0px 0px 0px;
-
 }
 .display2{
-	height: 40px;
-	background-color: #848580;
+	height: 35px;
+	background-color: #a1a492; /*#848580;*/
 	color: #000;
-	font-size: 22px;
+	font-size: 17px;
 	text-align: right;
 	border-top-style: none;	
 	border-bottom-left-radius: 10px;

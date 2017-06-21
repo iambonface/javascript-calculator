@@ -2,6 +2,19 @@
 function addVal(val){
 
 	document.getElementById("DisplayScreen").value += val
+
+	var x = document.getElementById("DisplayScreen").value
+
+	var arrX = []
+
+	arrX.push(x)
+
+
+	if(arrX[0] === "*" || arrX[0] === "+" || arrX[0] === "/"){
+		document.getElementById("DisplayScreen").value = ""
+	}
+
+	document.getElementById("Display").value = 0
 }
 
 function result(){
@@ -59,10 +72,7 @@ function sqrt(){
 
 	document.getElementById("Display").value = x
 
-	*/
-
-
-	
+	*/	
 
 }
 
@@ -155,7 +165,7 @@ function memoryRemove(){
 	var newMem = memoryArr.join('')
 	//document.getElementById("Display").value = newMem
 
-	document.getElementById("DisplayScreen").value = newMem /*top to display nothing in memory*/
+	document.getElementById("DisplayScreen").value = newMem //top to display nothing in memory
 
 	document.getElementById("Display").value = ""
 
@@ -163,23 +173,60 @@ function memoryRemove(){
 
 function exp(){
 
-	//document.getElementById("Display").value = document.getElementById("DisplayScreen").value
+	var x = document.getElementById("DisplayScreen").value
+	var y = document.getElementById("Display").value
 
-	var x = parseFloat(Math.exp(document.getElementById("DisplayScreen").value))
-	document.getElementById("Display").value = x.toFixed(7)
+	var xLength = (x.split('')).length
+	var yLength = (y.split('')).length
 
-	var v = document.getElementById("Display").value
+	if(yLength > 0 && xLength === 0){
 
-	document.getElementById("DisplayScreen").value = v
-	document.getElementById("Display").value = ""
+		var x = parseFloat(Math.exp(document.getElementById("Display").value))
+		document.getElementById("DisplayScreen").value = x
 
+		var v = document.getElementById("DisplayScreen").value
+
+		document.getElementById("Display").value = v
+		document.getElementById("DisplayScreen").value = ""
+
+	} else if(yLength === 0 && xLength > 0){
+		var x = parseFloat(Math.exp(document.getElementById("DisplayScreen").value))
+		document.getElementById("DisplayScreen").value = x
+
+		var v = document.getElementById("DisplayScreen").value
+
+		document.getElementById("DisplayScreen").value = ""
+		document.getElementById("Display").value = v
+	} else{
+		var x = parseFloat(Math.exp(document.getElementById("DisplayScreen").value))
+		document.getElementById("DisplayScreen").value = x
+
+		var v = document.getElementById("DisplayScreen").value
+
+		document.getElementById("Display").value = v
+		document.getElementById("DisplayScreen").value = ""
+		
+	}
 
 }
 
 function signBefore(){
 
+	//Get value of first char of the display to check sign and replace
+	var x = document.getElementById("DisplayScreen").value
+
+	var arrX = []
+
+	arrX.push(x)
+
+	if(arrX[0] === "-"){
+		arrX.replace(arrX[0], "+")
+	}
+
+	var pos = arrX.join('')
+
 	if(Math.sign(document.getElementById("DisplayScreen").value) === -1){
-		document.getElementById("DisplayScreen").value = document.getElementById("DisplayScreen").value
+		document.getElementById("DisplayScreen").value = -pos
 
 	}else if(Math.sign(document.getElementById("DisplayScreen").value) === 1){
 		document.getElementById("DisplayScreen").value = -(document.getElementById("DisplayScreen").value)
