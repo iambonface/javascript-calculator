@@ -1,3 +1,4 @@
+
 function addVal(val){
 
 	document.getElementById("DisplayScreen").value += val
@@ -22,13 +23,46 @@ function result(){
 
 function sqrt(){
 
+	var x = document.getElementById("DisplayScreen").value
+	var y = document.getElementById("Display").value
+
+	var xLength = (x.split('')).length
+	var yLength = (y.split('')).length
+
+	if(yLength > 0 && xLength === 0){
+
+		var x = parseFloat((Math.sqrt(document.getElementById("Display").value)).toFixed(7))
+
+		document.getElementById("Display").value = ""
+
+		document.getElementById("Display").value = x
+	} else if(yLength === 0 && xLength > 0){
+		var x = parseFloat((Math.sqrt(document.getElementById("DisplayScreen").value)).toFixed(7))
+
+		document.getElementById("DisplayScreen").value = ""
+
+		document.getElementById("Display").value = x
+
+	} else{
+		var x = parseFloat((Math.sqrt(document.getElementById("DisplayScreen").value)).toFixed(7))
+
+		document.getElementById("DisplayScreen").value = ""
+
+		document.getElementById("Display").value = x
+
+	}
+
+	/*
 	var x = parseFloat((Math.sqrt(document.getElementById("DisplayScreen").value)).toFixed(7))
 
+	document.getElementById("DisplayScreen").value = ""
 
-	document.getElementById("DisplayScreen").value = x
+	document.getElementById("Display").value = x
 
-	document.getElementById("Display").value = ""
+	*/
 
+
+	
 
 }
 
